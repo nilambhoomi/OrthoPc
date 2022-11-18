@@ -1051,7 +1051,7 @@ public partial class Templatestorepdfnew : System.Web.UI.Page
     public static void Generatepdf()
     {
         string patientID = Convert.ToString(HttpContext.Current.Session["PatientIE_ID"]);
-        Templatestorepdf example = new Templatestorepdf();
+        Templatestorepdfnew example = new Templatestorepdfnew();
         example.bindEditData(patientID);
 
         string names = Convert.ToString(HttpContext.Current.Session["fname"]) + " " + Convert.ToString(HttpContext.Current.Session["lname"]);
