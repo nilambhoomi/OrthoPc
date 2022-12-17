@@ -135,9 +135,7 @@ public class PdfGenerator
                         pdfFormFields.SetField(textpair[0], "");
                     }
                 }
-                else
-                    pdfFormFields.SetField(textpair[0], "");
-
+               
             }
             if (de.Key.ToLower().StartsWith ("imgsign"))
                 {
